@@ -39,7 +39,20 @@
 
     <!-- main -->
     <main>
-
+        <div class="container">
+            <div class="row g-3">
+                <div class="col card-container" v-for="disc in discs" :key="disc.title">
+                    <div class="card-image">
+                        <img :src="disc.poster" :alt="disc.title">
+                    </div>
+                    <div class="card-text">
+                        <h3>{{ disc.title }}</h3>
+                        <p>{{ disc.author }}</p>
+                        <h5>{{disc.year}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 
