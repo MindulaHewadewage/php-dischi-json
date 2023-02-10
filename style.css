@@ -53,20 +53,24 @@ header img {
 
 main {
   background-color: #1d2d3c;
-  height: calc(100vh - 100px);
+  height: 100%;
 }
 
 .card-container {
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+
   display: flex;
   flex-wrap: wrap;
 }
 
-.disc.card {
-  height: 200px;
-  width: 150px;
-  color: white;
+.disc-card {
+  flex-basis: 20%;
+  margin: 20px;
 }
 
 .disc-card img {
-  width: 150px;
+  width: 200px;
+  padding: 20px 0;
 }

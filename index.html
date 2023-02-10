@@ -44,9 +44,9 @@
                 <div class="card-container">
                     <div class="disc-card" v-for="disc in discs" :key="disc.title">
                         <img :src="disc.poster" :alt="disc.title">
-                        <h3>{{ disc.title }}</h3>
+                        <h5>{{ disc.title }}</h5>
                         <p>{{ disc.author }}</p>
-                        <h5>{{disc.year}}</h5>
+                        <h6>{{disc.year}}</h6>
                     </div>
 
                 </div>
