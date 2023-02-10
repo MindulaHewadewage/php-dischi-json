@@ -59,10 +59,12 @@ main {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc(100% / 3);
-  min-height: 300px;
-  width: auto;
 }
 
-.song-card {
+.disc.card {
+  flex-basis: 20%;
+}
+
+.disc-card img {
+  width: 150px;
 }

@@ -24,36 +24,33 @@
 </head>
 
 <body>
-    <!-- header -->
-    <header>
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="logo">
-                <a href="#"><img src="https://www.pngmart.com/files/22/Spotify-Logo-PNG-Transparent.png"
-                        alt="logo-spotify"></a>
-            </div>
-            <div class="filter">
-                <input type="text">
-            </div>
-        </div>
-    </header>
-
-    <!-- main -->
-    <main>
-        <div class="container">
-            <div class="row g-3">
-                <div class="col card-container" v-for="disc in discs" :key="disc.title">
-                    <div class="card-image">
-                        <img :src="disc.poster" :alt="disc.title">
-                    </div>
-                    <div class="card-text">
-                        <h3>{{ disc.title }}</h3>
-                        <p>{{ disc.author }}</p>
-                        <h5>{{disc.year}}</h5>
-                    </div>
+    <div id="app">
+        <!-- header -->
+        <header>
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <a href="#"><img src="https://www.pngmart.com/files/22/Spotify-Logo-PNG-Transparent.png"
+                            alt="logo-spotify"></a>
+                </div>
+                <div class="filter">
+                    <input type="text">
                 </div>
             </div>
-        </div>
-    </main>
+        </header>
+
+        <!-- main -->
+        <main>
+            <div class="card-container">
+                <div class="disc-card" v-for="disc in discs" :key="disc.title">
+                    <img :src="disc.poster" :alt="disc.title">
+                    <h3>{{ disc.title }}</h3>
+                    <p>{{ disc.author }}</p>
+                    <h5>{{disc.year}}</h5>
+                </div>
+
+            </div>
+        </main>
+    </div>
 </body>
 
 </html>
